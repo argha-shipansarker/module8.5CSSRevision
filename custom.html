@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom property or css variable </title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --mainColor: red;
+            --fontSize: 30px;
+            --padding: 60px;
+            --border: 2px;
+
+        }
+
+        h3 {
+            color: var(--argha);
+            font-size: var(--fontSize);
+            padding: var(--padding);
+            border: var(--border) solid blue;
+            clear: both;
+        }
+
+        .nav,
+        .blog {
+            float: left;
+            /* border: 2px solid red; */
+            /* width: 200px; */
+            height: 500px;
+        }
+
+        .nav {
+            width: 200px;
+            background-color: red;
+        }
+
+        .blog {
+            width: calc(100% - 200px);
+            background-color: black;
+        }
+
+        input:focus:hover {
+            background-color: red;
+        }
+
+        .child:nth-child(2n+1) {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <aside class="nav">this is a side nav</aside>
+    <div class="blog">this is blog inside of the nav</div>
+    <!-- <div class="test">hello there</div> -->
+    <h3>my name is argha</h3>
+    <input type="text" name="" id="">
+    <li>item-1</li>
+    <li class="child">item-1</li>
+    <ul>
+        <li class="child">item-2</li>
+        <li class="child">item-3</li>
+        <li class="child">item-4</li>
+        <li class="child">item-5</li>
+    </ul>
+    <ul>
+        <li>item - 1</li>
+        <li>item - 2</li>
+        <li>item - 3</li>
+        <li>item - 4</li>
+        <li>item - 5</li>
+    </ul>
+</body>
+
+</html>
